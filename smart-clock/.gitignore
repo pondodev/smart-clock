@@ -1,0 +1,39 @@
+# kicad
+# format documentation: https://kicad.org/help/file-formats/
+
+# temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# netlist files (exported from Eeschema)
+*.net
+
+# autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# exported BOM files
+*.xml
+*.csv
+
+# exported pdfs
+*.pdf
+
+# ?????????????
+\#auto_saved_files\#
+
+# macos
+.DS_Store
+

@@ -1,0 +1,45 @@
+{
+    "version": 1,
+    "author": "dan coady",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "type": "wokwi-pi-pico",
+            "id": "pico",
+            "attrs": { "builder": "pico-sdk" }
+        },
+        {
+            "type": "wokwi-led",
+            "id": "debug-led",
+            "top": -40,
+            "left": -65,
+            "attrs": { "color": "red" }
+        },
+        {
+            "type": "wokwi-dht22",
+            "id": "dht22",
+            "top": -40,
+            "left": 155,
+            "rotate": 90
+        },
+        {
+            "type": "wokwi-buzzer",
+            "id": "piezo-speaker",
+            "top": 80,
+            "left": 155,
+            "rotate": 90
+        }
+    ],
+    "connections": [
+        [ "pico:GP2", "debug-led:A", "green", [] ],
+        [ "pico:GND.1", "debug-led:C", "black", [] ],
+
+        [ "pico:VSYS", "dht22:VCC", "red", [] ],
+        [ "pico:GND.8", "dht22:GND", "black", [] ],
+        [ "pico:GP0", "dht22:SDA", "green", [] ],
+
+        [ "pico:GP28", "piezo-speaker:2", "red", [] ],
+        [ "pico:GND.8", "piezo-speaker:1", "black", [] ]
+    ],
+    "dependencies": {}
+}

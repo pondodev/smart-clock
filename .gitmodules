@@ -1,0 +1,7 @@
+[submodule "kicad-libs/KiCad-RP-Pico"]
+	path = kicad-libs/KiCad-RP-Pico
+	url = https://github.com/ncarandini/KiCad-RP-Pico.git
+[submodule "pico-sdk"]
+	path = pico-sdk
+	url = https://github.com/raspberrypi/pico-sdk.git
+	branch = master
